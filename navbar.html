@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NavBar.html</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="navbar.css">  
+</head> 
+
+<body>
+    <div id="preloader" ></div>
+    <header>
+        <nav class="NavBar">
+        <div class="Brand">Padaki</div>
+        <ul class="Nav-menu">
+            <li class="Nav-item"> <a href = "#" class="Nav-link">Home</a></li>
+                <li class="Nav-item"> <a href = "#" class="Nav-link">About</a></li>
+                    <li class="Nav-item"> <a href = "#" class="Nav-link">Contact</a></li>
+                        </ul>
+    <div class="Hamburger">
+        <span class="bar"></span>
+            <span class="bar"></span>
+                <span class="bar"></span>
+    </div>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i8m7u18XU9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i8m7u18XU9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/i8m7u18XU9k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    
+    </nav>
+    </header>
+    <script>
+        const HamB = document.querySelector(".Hamburger");
+        const NavB = document.querySelector(".Nav-menu");
+        HamB.addEventListener("click", () => {
+            HamB.classList.toggle("active");
+            NavB.classList.toggle("active");
+        })
+</script>
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function(){
+        loader.style.display = "none";
+       })
+    
+    </script>
+    </body>
